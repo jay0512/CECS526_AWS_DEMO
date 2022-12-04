@@ -1,0 +1,7 @@
+.aws
+.aws-sam
+
+samconfig.toml
+html/urls.js
+
+.DS_Store
