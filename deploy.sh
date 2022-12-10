@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 
-export DOCKER_VERSION=${DOCKER_VERSION:-$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)} # force redeployment on changes
+# export DOCKER_VERSION=${DOCKER_VERSION:-$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)} # force redeployment on changes
+export DOCKER_VERSION=${DOCKER_VERSION:-V1} # force redeployment on changes
 export DOCKER_IMAGE=${DOCKER_IMAGE:-jaypatel05/aws-blog-demo}:$DOCKER_VERSION
+
+echo "DOCKER_IMAGE: $DOCKER_IMAGE"
+echo "DOCKER_VERSION: $DOCKER_VERSION"
 
 echo "  > Steps to perform:"
 echo "  >  1. build & push Docker container                 [container stack] - $DOCKER_IMAGE"
@@ -18,7 +22,7 @@ sam build
 sam deploy --parameter-overrides "ParameterKey=DockerImage,ParameterValue=$DOCKER_IMAGE"
 
 ## Save URLs
-RAW_OUTPUTS=$(aws cloudformation describe-stacks --stack-name sam-app --query "Stacks[0].Outputs")
+RAW_OUTPUTS=$(aws cloudformation describe-stacks --stack-name aws-blog-demo --query "Stacks[0].Outputs")
 echo $RAW_OUTPUTS
 echo "let urls = $RAW_OUTPUTS" > html/urls.js
 

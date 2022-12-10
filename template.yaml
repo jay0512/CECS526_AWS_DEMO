@@ -5,7 +5,7 @@
 #
 # Created: 2022-11-25
 # Author: jaypatel05
-# 
+
 
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
@@ -21,7 +21,7 @@ Parameters:
     DockerImage:
         Type: String
         Description: Docker image location (push first, then pass in)
-        Default: aws-blog-demo
+        Default: jaypatel05/aws-blog-demo:V1
     
 Outputs:
     FunctionsURL:
@@ -200,7 +200,7 @@ Resources:
             Scheme: internet-facing
             LoadBalancerAttributes:
                 - Key: idle_timeout.timeout_seconds
-                  Value: '30'
+                  Value: '100'
             Subnets:
                 - !Ref FargateSubnet1
                 - !Ref FargateSubnet2
