@@ -95,3 +95,24 @@ Project has very plain HTML UI with blog display, post and delete functionality.
 
 
 Below diagram shows detailed figure of AWS Services stack with two different paths and UI For the Application.
+![AOSFinalProjectDiagram drawio](https://user-images.githubusercontent.com/26021273/206849451-1b745ffb-f2a1-4c2f-9ef2-41a62d405466.png)
+
+![SS1](https://user-images.githubusercontent.com/26021273/206849467-0a8289c8-cfed-4dbf-a3ce-329740bb9442.png)
+
+![SS4](https://user-images.githubusercontent.com/26021273/206849510-e4295145-34bd-4f73-9ee4-cfaced0c1b76.png)
+
+![SS5](https://user-images.githubusercontent.com/26021273/206849512-86f032ed-3cff-4bae-bdce-00d41b7873b7.png)
+
+![SS6](https://user-images.githubusercontent.com/26021273/206849513-a517d201-d10a-4c74-be26-8030983bd882.png)
+
+![SS7](https://user-images.githubusercontent.com/26021273/206849516-eb876616-d90d-4f36-a994-6b6c9423f600.png)
+
+![SS8](https://user-images.githubusercontent.com/26021273/206849517-8bed4a45-8bcf-4cf2-b017-11102d269be1.png)
+
+![SS9](https://user-images.githubusercontent.com/26021273/206849519-7433f577-f15b-4f7a-92e4-5bfe86a86646.png)
+
+![SS10](https://user-images.githubusercontent.com/26021273/206849521-b20ad6e3-e6e0-42f9-af88-5bee4031fe9a.png)
+
+
+https://user-images.githubusercontent.com/26021273/206849660-e5301221-faa3-4a8f-9015-3a7605c26d98.mp4
+
