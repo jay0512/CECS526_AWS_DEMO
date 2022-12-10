@@ -88,8 +88,8 @@ Value               https://nwd9e79fg2.execute-api.us-west-1.amazonaws.com/Prod
 ```
 The Deploy scripts update the `urls.js` with the ContainersURL and FunctionsURL so that the HTML page can give options to choose the backend for further network calls.
 
-https://user-images.githubusercontent.com/26021273/206849660-e5301221-faa3-4a8f-9015-3a7605c26d98.mp4
-[Video: Steps for the deployment]
+https://user-images.githubusercontent.com/26021273/206879363-bcf74980-2274-4573-8c22-fd548cb03a6b.mp4
+
 
 ## The architecture of the Flask Blog Application
 
