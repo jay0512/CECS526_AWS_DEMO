@@ -185,6 +185,10 @@ Difference between serverless function and serverless container:
 - Public cloud infrastructure houses serverless environments, which are invoiced on a usage basis.
 - Most container orchestrators and engines are open sources, and you can use them to run locally for no cost (considering the time needed to deploy and maintain them).
 
+### Evaluation Testbed
+We set up a prototype testbed running the AWS EC2 container to host four Ubuntu (v16.04) Virtual Machines (VMs). Each VM, representing an Edge node, was equipped with 8 CPU cores and 512 MB RAM. We deployed the Docker Container on AWS ECS Containers in t2-micro instance. The Lambda functions created in python 3.7 which uses 64-bit x86 architecture, for x86-based processors. x86_64 is the default architecture.
 
 ### Conclusion
+The work presented in this project makes three contributions: (a) a comparison of the platforms and tools used in serverless computing; (b) a thorough analysis of the variations, advantages, and problems associated with serverless computing, in order to offer a more thorough understanding of the subject.
+AWS Lambda is a function as a service, whereas Fargate is a container as a service (CaaS) offering (FaaS offering). It is therefore simpler to start using Lambda because Lambda functions do not necessarily need to be packed into containers. But Fargate is the way to go if you have containerized applications.
 
